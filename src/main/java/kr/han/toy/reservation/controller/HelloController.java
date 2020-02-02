@@ -29,6 +29,7 @@ public class HelloController {
 
     @GetMapping("/users")
     public ResponseEntity<List<DbUser>> getTestUser(){
+        testRepository.save(DbUser.builder().name("kkk").age(3).build());
         return new ResponseEntity<List<DbUser>>(testRepository.findAll(), HttpStatus.OK);
     }
 

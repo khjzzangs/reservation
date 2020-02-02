@@ -13,7 +13,7 @@ public class DataSourceConfig {
 
     @Bean
     @ConfigurationProperties("spring.datasource.hikari")
-    public DataSource dataSource(){
+    public DataSource dataSource() {
         return DataSourceBuilder.create().build();
     }
 }

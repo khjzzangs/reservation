@@ -1,19 +1,36 @@
 package kr.han.toy.reservation.model;
 
+import lombok.Builder;
 import lombok.Getter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "Test")
+@Table(name = "test")
 @Getter
 public class DbUser {
 
+
+    public DbUser() {
+    }
+
+    @Builder
+    public DbUser(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+
     @Id
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.TABLE, generator = "SEQ_TEST")
+    @TableGenerator(
+            name = "SEQ_TEST"
+            , table = "TB_SEQUENCE"
+            , pkColumnName = "SEQ_NAME"
+            , valueColumnName = "SEQ_VALUE"
+            , pkColumnValue = "SEQ_TEST"
+            , initialValue = 1
+            , allocationSize = 1 )
     private int id;
     @Column(name = "name")
     private String name;
