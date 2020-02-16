@@ -2,17 +2,17 @@ package kr.han.toy.reservation.model;
 
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "test")
 @Getter
+@NoArgsConstructor
 public class DbUser {
 
 
-    public DbUser() {
-    }
 
     @Builder
     public DbUser(String name, int age){
@@ -24,6 +24,7 @@ public class DbUser {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "SEQ_TEST")
     @TableGenerator(
+
             name = "SEQ_TEST"
             , table = "TB_SEQUENCE"
             , pkColumnName = "SEQ_NAME"
