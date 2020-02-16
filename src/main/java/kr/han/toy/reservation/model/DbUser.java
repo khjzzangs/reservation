@@ -13,7 +13,6 @@ import javax.persistence.*;
 public class DbUser {
 
 
-
     @Builder
     public DbUser(String name, int age){
         this.name = name;
@@ -24,7 +23,6 @@ public class DbUser {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "SEQ_TEST")
     @TableGenerator(
-
             name = "SEQ_TEST"
             , table = "TB_SEQUENCE"
             , pkColumnName = "SEQ_NAME"
