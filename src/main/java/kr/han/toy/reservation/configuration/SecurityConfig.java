@@ -18,17 +18,6 @@ public class SecurityConfig {
     @Autowired
     private DataSource dataSource;
 
-    @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        // ensure the passwords are encoded properly
-        User.UserBuilder users = User.withUsername()
-            auth
-                .jdbcAuthentication()
-                .dataSource(dataSource)
-                .withDefaultSchema()
-                .withUser(users.username("user").password("password").roles("USER"))
-                .withUser(users.username("admin").password("password").roles("USER","ADMIN"));
-    }
 
     /**
      * In-memory Configuration

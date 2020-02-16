@@ -1,7 +1,6 @@
 package kr.han.toy.reservation.model;
 
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -10,10 +9,9 @@ import java.util.Date;
 
 
 @Entity
-@Table("SPACE")
+@Table(name = "SPACE")
 @Getter
 @NoArgsConstructor
-@Builder
 public class SPACE {
 
     @Id
