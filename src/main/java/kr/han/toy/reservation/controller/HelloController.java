@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.security.Principal;
 import java.util.List;
 
 
@@ -20,6 +21,12 @@ public class HelloController {
 
     @Autowired
     private TestRepository testRepository;
+
+    @GetMapping
+    public Principal retrievePrincipal(Principal principal) {
+        return principal;
+    }
+/*
 
     @GetMapping("/start")
     public MockTest getStartingPoint(){
@@ -32,6 +39,7 @@ public class HelloController {
         testRepository.save(DbUser.builder().name("kkk").age(3).build());
         return new ResponseEntity<List<DbUser>>(testRepository.findAll(), HttpStatus.OK);
     }
+*/
 
 
 }
