@@ -27,8 +27,8 @@ public class SecurityConfig {
     public void configureGlobal( AuthenticationManagerBuilder auth )  throws Exception {
         User.UserBuilder user = User.withUsername("test");
             auth.jdbcAuthentication()
-//                .dataSource(dataSource)
-                .withDefaultSchema()
+                .dataSource(dataSource)
+//                .withDefaultSchema()   // HSQLDB의 DB스키마를 실행함 (MariaDB에는 안맞음)
                 .withUser(passwordEncoder().encode("test"))
                 .roles("USER");
     }

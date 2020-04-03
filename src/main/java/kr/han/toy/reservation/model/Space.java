@@ -12,7 +12,7 @@ import java.util.Date;
 @Table(name = "SPACE")
 @Getter
 @NoArgsConstructor
-public class SPACE {
+public class Space {
 
     @Id
     private int spaceId;

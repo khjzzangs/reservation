@@ -23,7 +23,7 @@
         </root>
     </springProfile>
 
-    <springProfile name="dev | staging">
+    <springProfile name="local | dev | staging">
         <!-- configuration to be enabled when the "dev" or "staging" profiles are active -->
         <root level="info">
             <appender-ref ref="STDOUT" />
