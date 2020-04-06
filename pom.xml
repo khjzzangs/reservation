@@ -14,11 +14,23 @@
 	<name>reservation</name>
 	<description>Common Reservation System </description>
 
+	<developers>
+		<developer>
+			<id>worldblue</id>
+			<email>khj20825@gmail.com</email>
+			<name>Kim. Hyunjong</name>
+			<organization>None</organization>
+		</developer>
+	</developers>
+
 	<properties>
 		<java.version>1.8</java.version>
+		<org.thymeleaf.version>3.0.11.RELEASE</org.thymeleaf.version>
+		<org.mariadb.client.version>2.5.3</org.mariadb.client.version>
 	</properties>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -37,6 +49,10 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
@@ -49,12 +65,7 @@
 		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
-			<version>2.5.3</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mariadb.jdbc</groupId>
-			<artifactId>mariadb-java-client</artifactId>
-			<version>2.5.3</version>
+			<version>${org.mariadb.client.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -68,7 +79,6 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
