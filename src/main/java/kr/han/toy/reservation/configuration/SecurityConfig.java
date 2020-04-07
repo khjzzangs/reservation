@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.User;
@@ -24,6 +25,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private DataSource dataSource;
 
+    @Override
+    public void configure(WebSecurity web) throws Exception {
+        super.configure(web);
+        web.ignoring().antMatchers("/assets/**");
+    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -31,13 +37,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .cors().and()
                 .httpBasic().disable()
                 .authorizeRequests()
-                    .antMatchers("favicon.ico", "/login", "/test").access("hasRole('ADMIN')")
+                    .antMatchers("/favicon.ico", "/","/**").permitAll()
                     .anyRequest().authenticated()
                 .and()
                 .formLogin()
-                    .loginPage("/login")
-                    .loginProcessingUrl("/siginIn")
-                    .defaultSuccessUrl("/")
+                    .loginPage("/signin")
+                    .loginProcessingUrl("/precess_signin")
                     .permitAll()
                 .and()
                 .logout()
@@ -49,19 +54,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     public void configureGlobal( AuthenticationManagerBuilder auth )  throws Exception {
-        User.UserBuilder user = User.withUsername("test");
             auth.jdbcAuthentication()
                 .dataSource(dataSource)
 //                .withDefaultSchema()   // HSQLDB의 DB스키마를 실행함 (MariaDB에는 안맞음)
-                .withUser(passwordEncoder().encode("test"))
-                .roles("USER");
+                .passwordEncoder(passwordEncoder());
     }
 
     /**
      * In-memory Configuration
      * @return
      */
-    @Bean
+  /*  @Bean
     public UserDetailsService userDetailsService() {
         // ensure the passwords are encoded proØperly
         UserDetails users = User
@@ -74,7 +77,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         manager.createUser(users);
         return manager;
     }
-
+*/
 
     /**
      *  패스워드 암호화(random salt)

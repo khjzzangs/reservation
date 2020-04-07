@@ -15,17 +15,16 @@ import java.security.Principal;
 import java.util.List;
 
 
-@RestController
 public class HelloController {
-    final static Logger logger = LoggerFactory.getLogger(HelloController.class);
-
-    @Autowired
-    private TestRepository testRepository;
-
-    @GetMapping
-    public Principal retrievePrincipal(Principal principal) {
-        return principal;
-    }
+//    final static Logger logger = LoggerFactory.getLogger(HelloController.class);
+//
+//    @Autowired
+//    private TestRepository testRepository;
+//
+//    @GetMapping
+//    public Principal retrievePrincipal(Principal principal) {
+//        return principal;
+//    }
 /*
 
     @GetMapping("/start")
