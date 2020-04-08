@@ -9,10 +9,16 @@ import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @Configuration
-public class WebConfiguration  {
+//@EnableWebMvc
+public class WebConfiguration implements WebMvcConfigurer {
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOrigins("*")
+                .allowedHeaders("Access-Control-Allow-Origin");
+    }
 
-
-//
+    //
 //    @Bean
 //    public ThymeleafViewResolver viewResolver() {
 //        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();

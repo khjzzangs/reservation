@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LoginController {
 
-    @CrossOrigin( origins = "http://localhost:9090", maxAge = 3600)
     @RequestMapping(value= "/signin", method = RequestMethod.GET)
     public String viewSignin() {
 
