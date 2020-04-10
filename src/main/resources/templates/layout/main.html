@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"  >
     <head>
         <title>예약 플랫폼 </title>
 
@@ -36,7 +37,9 @@
         </head>
         <body>
             <header th:replace="layout/top :: top"></header>
-            <section></section>
+            <section>
+                <div layout:fragment="contents"></div>
+            </section>
             <div th:replace="layout/footer :: footer"></div>
 
             <!-- Copy end right-->
