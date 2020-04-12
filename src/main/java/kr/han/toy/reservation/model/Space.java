@@ -3,16 +3,17 @@ package kr.han.toy.reservation.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
 
-
-@Entity
-@Table(name = "SPACE")
+@Setter
 @Getter
 @NoArgsConstructor
-public class SPACE {
+@Entity
+@Table(name = "SPACE")
+public class Space {
 
     @Id
     private int spaceId;
@@ -34,3 +35,5 @@ public class SPACE {
     private Date updated;
 
 }
+
+
