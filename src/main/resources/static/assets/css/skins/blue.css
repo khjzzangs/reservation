@@ -1,0 +1,502 @@
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar-search-input::-webkit-input-placeholder {
+    color: #5950f7;
+}
+
+.navbar-search-input:-moz-placeholder {
+    color: #5950f7;
+}
+
+.dropdown-menu .open > a, .dropdown-menu .open > a:focus, .dropdown-menu .open > a:hover {
+    background-color: #5950f7;
+    border-bottom: 1px solid transparent;
+    color: #fff;
+}
+
+.navbar-search-input::-moz-placeholder {
+    color: #5950f7;
+}
+
+.navbar-search-input:-ms-input-placeholder {
+    color: #5950f7;
+}
+
+.navbar-search-open .navbar-search-icon {
+    background: #5950f7;
+}
+
+.navbar-search-open .navbar-search-submit {
+    background: #5950f7;
+}
+
+#page_scroller {
+    background: #5950f7;
+}
+
+.setting-button{
+    background: #5950f7;
+}
+
+.option-panel h2{
+    color: #5950f7;
+}
+
+.list-inline-listing .active{
+    background: #5950f7;
+}
+
+.list-inline-listing li:hover{
+    background: #5950f7;
+}
+
+.btn-theme {
+    background: #5950f7;
+    border: 2px solid #5950f7;
+}
+
+.btn-theme:hover {
+    background: #4d44e8;
+    border: 2px solid #4d44e8;
+}
+
+.read-more-btn{
+    color:  #5950f7;
+}
+
+
+.search-contents .dropdown-menu>li>a:hover {
+    color: #fff;
+    background: #5950f7;
+    border: 0;
+}
+
+.btn-outline:hover{
+    background: #5950f7;
+    border: 2px solid #5950f7;
+    color: #fff;
+}
+
+.our-facilties ul li i{
+    border: solid 2px #5950f7;
+    color: #5950f7;;
+}
+
+.pages-404-2 .btn, .pages-404 .btn:hover, .pages-404 .btn:active {
+    background: #5950f7;
+}
+
+.newsletter form .btn-small {
+    border: solid 1px #5950f7;
+    background: #5950f7;
+}
+
+.fecilities li i{
+    color: #5950f7;
+}
+
+.newsletter form .btn-small:hover {
+    border: solid 1px #4d44e8;
+    background: #4d44e8;
+}
+
+.rooms-features ul li i {
+    color: #5950f7;
+}
+
+.border-btn-theme {
+    border: 2px solid #5950f7;
+    color: #5950f7;
+}
+
+.search-contents h2 span{
+    color: #5950f7;
+}
+
+.border-btn-theme:hover {
+    background: #5950f7;
+    color: #fff;
+}
+
+.theme-tabs .nav-tabs > li > a {
+    background: #5950f7;
+}
+
+.theme-tabs .nav-tabs > li.active > a,
+.theme-tabs .nav-tabs > li > a:hover {
+    color: #5950f7 !important;
+}
+
+.theme-tabs .nav-tabs > li > a::after {
+    background: #5950f7;
+}
+
+.theme-tabs .tab-nav > li > a::after {
+    background: #5950f7 none repeat scroll 0% 0%;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    border-color: #5950f7;
+    border-bottom: transparent;
+}
+
+.main-header-4 .navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #5950f7 !important;
+    border-bottom: solid 2px #5950f7;
+}
+
+.main-header .navbar-default .nav > li > a:hover{
+    color: #5950f7;
+    border-bottom: solid 2px #5950f7;
+}
+
+.btn-navbar:hover{
+    border: solid 2px #5950f7 !important;
+}
+
+.header-search .btn-default,
+.header-search .btn-default:focus,
+.header-search .btn-default:hover
+{
+
+    background: #5950f7;
+}
+
+
+.intro-section {
+    background: #5950f7;
+}
+
+.panel-box .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background: #5950f7;
+    border-radius: 0;
+}
+
+.panel-box ul li a:hover{
+    background: #5950f7;
+    color: #fff;
+    border-radius: 0;
+}
+
+span.round-tab {
+    border: 2px solid #5950f7;
+}
+
+span.round-tab i{
+    color:#5950f7;
+}
+
+.wizard li.active span.round-tab {
+    background: #5950f7;
+    border: 2px solid #5950f7;
+}
+
+.wizard li:after {
+    border-bottom-color: #5950f7;
+}
+
+.wizard li.active:after {
+    border-bottom-color: #5950f7;
+}
+
+.booking-flow .panel-box .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border: 2px solid #5950f7;
+}
+
+span.round-tab:hover {
+    border: 2px solid #5950f7;
+    background: #5950f7;
+}
+
+.course-panel-box .nav-tabs>li>a:hover {
+    color: #fff;
+    background: #5950f7;
+    border: none;
+}
+
+.heading-rooms  p i{
+    color: #5950f7;
+    margin-right: 5px;
+}
+
+.panel-box span a {
+    color: #5950f7;
+}
+
+.panel-box .panel-heading .panel-title a i{
+    color: #5950f7;
+}
+
+.heading-rooms  h3 {
+    color: #5950f7;
+}
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+    color: #5950f7;
+}
+
+.for-sale {
+    background: #5950f7;
+}
+
+.advantages ul li span{
+    color: #5950f7;
+}
+
+.category-content .btn, .category-content .pricing-btn {
+    background: #5950f7;
+}
+
+.search-area-box-2 h1{
+    color: #5950f7;
+}
+
+.dropdown-menu>li>a:hover {
+    color: #fff;
+    background: #5950f7;
+}
+
+.btn-outline {
+    border: solid 1px #5950f7;
+    color: #5950f7;
+}
+
+.btn-outline:hover {
+    border: solid 1px #5950f7;
+    background: #5950f7;
+    color: #fff;
+}
+
+.listing-properties-box .detail header.title a {
+    color: #5950f7;
+}
+
+.listing-properties-box .detail .title::after {
+    background-color: #5950f7;
+}
+
+.pagination > li > a:hover {
+    background: #5950f7;
+    border-color: #5950f7;
+}
+
+.pagination > .active > a {
+    background: #5950f7;
+    border-color: #5950f7;
+}
+
+.pagination > .active > a:hover {
+    background: #5950f7;
+    border-color: #5950f7;
+}
+
+.staff-box-2 .content h1 a{
+    color: #5950f7;
+}
+
+.form-content-box .footer span a {
+    color: #5950f7;
+}
+
+.staff-box-1-big .content h1 a:hover{
+    color: #5950f7;
+}
+
+.archives ul li a:hover{
+    color: #5950f7;
+}
+
+.category-posts ul li a:hover {
+    color: #5950f7;
+}
+
+.tags-box ul li a:hover {
+    border: 1px solid #5950f7;
+    background: #5950f7;
+}
+
+.latest-tweet a {
+    color: #5950f7;
+}
+
+.recent-news .media-heading a {
+    color: #5950f7;
+}
+
+.comment-meta-author a {
+    color: #5950f7;
+}
+
+.comment-meta-reply a {
+    background-color: #5950f7;
+}
+
+.contact-1 .contact-details .media .media-left i {
+    color: #5950f7;
+    border: 1px dashed #5950f7;
+}
+
+.about-text ul li i {
+    color: #5950f7;
+}
+
+.services-box-2 i{
+    color:  #5950f7;
+}
+
+.top-header-3{
+    background: #5950f7;
+}
+
+.sub-banner .breadcrumbs li a:hover{
+    color: #5950f7;
+}
+
+.search-contents-3 {
+    border-top: 3px solid #5950f7;
+    background: #eee;
+}
+
+
+.helping-center .icon {
+    color: #5950f7;
+}
+
+.header-contact ul li i {
+    color: #5950f7;
+}
+
+.services-box i{
+    color: #5950f7;
+}
+
+.customers-say-box .detail ul li i{
+    color: #5950f7;
+}
+
+.attachments a:hover{
+    color: #5950f7;
+}
+
+.btn-outline2{
+    border: solid 2px #5950f7;
+    color: #5950f7;
+}
+
+.btn-outline2:hover{
+    border: solid 2px #5950f7;
+    background: #5950f7;
+    color: #fff;
+}
+
+.hotel-box .detail h3 a{
+    color: #5950f7;
+}
+
+.hotel-box-list .detail h3 a{
+    color: #5950f7;
+}
+
+.events-box .date-box {
+    color: #5950f7;
+}
+
+.events-box-grid .events-content ul li i{
+    color: #5950f7;
+}
+
+.additional-details-list li a:hover{
+    color: #5950f7;
+}
+
+table.manage-table td.action a:hover{
+    color: #5950f7;
+}
+
+.numbered.color.filled ol > li::before {
+    border: 1px solid #5950f7;
+    background-color: #5950f7;
+}
+
+.numbered.color ol > li::before {
+    border: 1px solid #5950f7;
+    color: #5950f7;
+}
+
+.map-edu-list li i{
+    color: #5950f7;
+}
+
+.main-header-4 .navbar-default .nav > li > a:hover {
+    color: #5950f7 !important;
+}
+
+.flatpickr-day.selected, .flatpickr-day.selected:focus, .flatpickr-day.selected:hover {
+    border-color: #5950f7;
+    background: #5950f7;
+    color: #fff;
+}
+
+.flatpickr-current-month {
+    color: #5950f7;
+}
+
+.flatpickr-month {
+    fill: #5950f7;
+}
+
+.flatpickr-next-month svg:hover, .flatpickr-prev-month svg:hover {
+    fill: #5950f7;
+}
+
+
+.main-header .navbar-default .nav > li > a.btn-theme-sm-outline {
+    color: #5950f7 !important;
+    background: transparent;
+    border: solid 2px #5950f7 !important;
+}
+
+.main-header .navbar-default .nav > li > a.btn-theme-sm-outline:hover {
+    color: #FFF !important;
+    background: #5950f7;
+    border: solid 2px #5950f7 !important;
+}
+
+@media (max-width: 768px) {
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background: #5950f7;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        background-color: #5950f7;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        background: #eee;
+    }
+
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+        border-bottom: solid 1px #5950f7;
+    }
+
+    .main-header .navbar-default .nav > li > a:hover {
+        border-bottom: solid 1px #5950f7;
+    }
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > .active > a:hover {
+        color: #5950f7 !important;
+        border-bottom: solid 1px #5950f7 !important;
+    }
+
+}
+
+
+

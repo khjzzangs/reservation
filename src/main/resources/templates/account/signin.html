@@ -1,0 +1,50 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<div class="modal fade" id="signinModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" th:fragment="signin">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="form-content-box">
+            <!-- logo -->
+            <a href="index.html" class="clearfix alpha-logo">
+                <img th:src="@{assets/img/logos/white-logo.png}" alt="white-logo">
+            </a>
+            <!-- details -->
+            <div class="details">
+                <h3>Sign into your account</h3>
+                <!-- Form start -->
+                <form action="index.html" method="GET">
+                    <div class="form-group">
+                        <input type="email" name="email" class="input-text" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="Password" class="input-text" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                        <div class="ez-checkbox pull-left">
+                            <label>
+                                <input type="checkbox" class="ez-hide">
+                                Remember me
+                            </label>
+                        </div>
+                        <a href="forgot-password.html" class="link-not-important pull-right">Forgot Password</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="mb-0">
+                        <button type="submit" class="btn-md btn-theme btn-block">login</button>
+                        <button type="submit" class="btn-md btn-block" style="background: #cf4a33; color:#fff"><i class="fa fa-google-plus"></i> GOOGLE</button>
+                        <button type="submit" class="btn-md btn-block" style="background: #3b589e; color:#fff"><i class="fa fa-facebook"></i> FACEBOOK</button>
+                    </div>
+                </form>
+                <!-- Form end -->
+            </div>
+            <!-- Footer -->
+            <div class="footer">
+                <span>
+                    Don't have an account? <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#signupModal">Register here</a>
+                </span>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- Content bg area end -->
+</html>

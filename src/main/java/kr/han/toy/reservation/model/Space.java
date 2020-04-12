@@ -8,9 +8,6 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Date;
 
-@Setter
-@Getter
-@NoArgsConstructor
 @Entity
 @Table(name = "SPACE")
 public class Space {
