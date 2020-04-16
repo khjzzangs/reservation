@@ -5,7 +5,8 @@
         @Description 메뉴
         Main header start
     -->
-    <header class="main-header main-header-2 main-header-3" th:fragment="menu">
+    <div th:fragment="menu(user)">
+    <header class="main-header main-header-2 main-header-3" >
         <div class="container">
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
@@ -28,7 +29,8 @@
                                 Home<span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="index.html">Home 1</a></li>
+                                <li th:text="${user}"><a href="index.html">Home 1</a></li>
+                                <li><a href="index.html">Home 1${user}</a></li>
                                 <li><a href="index-2.html">Home 2</a></li>
                                 <li><a href="index-3.html">Home 3</a></li>
                                 <li><a href="index-4.html">Home 4</a></li>
@@ -138,7 +140,7 @@
                             <a class="btn-navbar btn btn-sm btn-white-sm-outline btn-round" href="#" data-toggle="modal" data-target="#signupModal" style="float:right;">
                                 SignUp
                             </a>
-                        </li>
+                        </li>`
                         <li>
                             <a id="header-search-btn" class="btn-navbar search-icon"><i class="fa fa-search"></i></a>
                         </li>
@@ -158,5 +160,9 @@
             </div>
         </div>
     </header>
+        <!-- 기본 모달 모듈 -->
+        <div th:insert="account/signup :: signup"></div>
+        <div th:insert="account/signin :: signin"></div>
+    </div>
     <!-- Main header end -->
 </html>

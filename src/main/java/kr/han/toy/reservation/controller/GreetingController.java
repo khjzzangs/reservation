@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@RequestMapping("/**")
 public class GreetingController {
 
-    @GetMapping
+    @GetMapping("/greet")
     public String greeting(
             @RequestParam(name="name", required =false, defaultValue="world") String name
             , Model model ) {

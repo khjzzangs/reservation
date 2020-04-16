@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"  >
+<html xmlns:th="http://www.thymeleaf.org" >
     <head>
         <title>예약 플랫폼 </title>
 
@@ -32,14 +31,12 @@
         <script th:src="@{assets/js/html5shiv.min.js}"></script>
         <script th:src="@{assets/js/respond.min.js}"></script>
         <![endif]-->
-
-
         </head>
         <body>
-            <header th:replace="layout/top :: top"></header>
-            <section>
-                <div layout:fragment="contents"></div>
-            </section>
+            <div th:text="${user}"></div>
+            <header th:replace="layout/top_menu :: menu(user=${user})"></header>
+            <div th:replace="layout/top :: top"></div>
+            <section></section>
             <div th:replace="layout/footer :: footer"></div>
 
             <!-- Copy end right-->

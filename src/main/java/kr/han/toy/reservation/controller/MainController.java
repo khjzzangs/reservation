@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.security.Principal;
 import java.util.List;
 
-@RequestMapping("/")
 @Controller
 public class MainController {
     final static Logger logger = LoggerFactory.getLogger(MainController.class);
@@ -26,8 +26,9 @@ public class MainController {
     @Autowired
     private TestRepository testRepository;
 
-    @GetMapping("index")
-    public String indexController() {
+    @GetMapping("/index")
+    public String indexController(Model model) {
+        model.addAttribute("user", "test");
         return "layout/main";
     }
 
